@@ -6,6 +6,9 @@ import { User } from './schemas/user.schema';
 
 @Controller('user')
 export class AppController {
+  getHello(): any {
+    throw new Error('Method not implemented.');
+  }
   userService: any;
   constructor(private readonly appService: AppService) {}
 

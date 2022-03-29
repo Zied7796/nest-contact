@@ -7,6 +7,9 @@ import UpdateUserDto from './dto/update-user.dto';
 
 @Injectable()
 export class AppService {
+  getHello() {
+    throw new Error('Method not implemented.');
+  }
   constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) {}
 
   async findOneByEmail(email: string): Promise<User> {
